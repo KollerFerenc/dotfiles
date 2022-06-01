@@ -116,7 +116,7 @@ function new_line() {
 ###
 
 if [ "$color_prompt" = yes ]; then
- PS1='${debian_chroot:+($debian_chroot)}\[\033[38;5;202m\][\[\033[38;5;99m\]\u\[\033[0;33m\]@\[\033[0;36m\]\h\[\033[38;5;202m\]]\[\033[0;33m\]-\[\033[0;34m\][\w]\[\033[0;31m\]$(parse_git_branch)\[\033[38;5;202m\]$(new_line)\[\033[0m\]\$ '
+ PS1='${debian_chroot:+($debian_chroot)}\[\033[38;5;202m\][\[\033[38;5;99m\]\u\[\033[0;33m\]@\[\033[0;36m\]\h\[\033[38;5;202m\]]\[\033[0;33m\]-\[\033[0;35m\][\w]\[\033[0;31m\]$(parse_git_branch)\[\033[38;5;202m\]$(new_line)\[\033[0m\]\$ '
 else
  PS1='${debian_chroot:+($debian_chroot)}[\u@\h]-[\w]$(parse_git_branch)$(new_line)\$ '
 fi
